@@ -1,5 +1,12 @@
-📂 Project Structure
-Plaintext
+# 🏎️ F1 Reinforcement Learning Agent
+
+A self-driving F1 car that learns to race from scratch using **Deep Reinforcement Learning**.
+
+This project uses **Stable-Baselines3 (PPO Algorithm)** and the **Gymnasium** `CarRacing-v3` environment. The car starts with zero knowledge of driving and learns to accelerate, steer, and brake to maximize its reward (completing laps efficiently) through trial and error.
+
+## 📂 Project Structure
+
+```text
 f1_learning_project/
 │
 ├── models/             # Stores the trained AI models (.zip files)
@@ -22,8 +29,10 @@ Create a Virtual Environment (Recommended):
 
 Bash
 python -m venv venv
+
 # Windows:
 venv\Scripts\activate
+
 # Mac/Linux:
 source venv/bin/activate
 Install Dependencies:
@@ -71,6 +80,6 @@ ImportError: tensorboard: You missed the installation step. Run pip install tens
 
 ImportError: tqdm/rich: You missed the progress bar tools. Run pip install tqdm rich.
 
-AttributeError: 'CarRacing' object has no attribute '...: Ensure you are using CarRacing-v3 in your code, as v2 is outdated.
+AttributeError: 'CarRacing' object has no attribute '...': Ensure you are using CarRacing-v3 in your code, as v2 is outdated.
 
 Happy Racing! 🏎️💨
